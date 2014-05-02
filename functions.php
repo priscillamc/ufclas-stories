@@ -50,7 +50,7 @@ function ufclas_stories_setup() {
 
 	// Setup the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'ufclas_stories_custom_background_args', array(
-		'default-color' => 'ffffff',
+		'default-color' => '#F3F3F3',
 		'default-image' => '',
 	) ) );
 
@@ -102,6 +102,11 @@ function ufclas_stories_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ufclas_stories_scripts' );
+
+function ufclas_stories_google_fonts(){
+	wp_enqueue_style('ufclas-stories-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans');	
+}
+add_action('wp_enqueue_scripts', 'ufclas_stories_google_fonts');
 
 /**
  * Implement the Custom Header feature.
