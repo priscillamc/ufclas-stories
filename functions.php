@@ -104,7 +104,7 @@ function ufclas_stories_scripts() {
 add_action( 'wp_enqueue_scripts', 'ufclas_stories_scripts' );
 
 function ufclas_stories_google_fonts(){
-	wp_enqueue_style('ufclas-stories-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans');	
+	wp_enqueue_style('ufclas-stories-fonts', 'http://fonts.googleapis.com/css?family=Lato:300,400');	
 }
 add_action('wp_enqueue_scripts', 'ufclas_stories_google_fonts');
 

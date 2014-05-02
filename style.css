@@ -82,7 +82,7 @@ html {
 	box-sizing:         border-box;
 }
 body {
-	background: #fff;
+	background: #F3F3F3;
 }
 article,
 aside,
@@ -141,6 +141,7 @@ textarea {
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: Lato, 'Lucida Sans', Arial, sans-serif;
 }
 p {
 	margin-bottom: 1.5em;
@@ -672,3 +673,36 @@ object {
 	max-width: 11.11%;
 }
 .gallery-caption {}
+
+/* 	END UNDERSCORES STYLES */
+
+h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link, 
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+	text-decoration: none;
+	color: #000;	
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+	text-decoration: none;
+	border-bottom: 1px dotted #333;
+}
+
+.site-title {
+	color: #222;
+    font-size: 1.7em;
+    font-weight: 300;
+	word-spacing: 1.6px;
+}
+.site-description {
+	font-family: Lato, 'Lucida Sans', Arial, sans-serif;
+	font-size: 1.0em;
+	font-weight: 400;
+	word-spacing: 1.6px;
+	text-align: right;
+}
+.site-branding {
+	background-color: #DDDDDD;
+    border-bottom: 1px solid #BBBBBB;
+	padding: 1em 0;
+    margin-bottom: 2.5em;
+    min-height: 66px;
+}
