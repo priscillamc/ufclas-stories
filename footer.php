@@ -10,8 +10,8 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
+	<footer id="colophon" class="site-footer container_24" role="contentinfo">
+		<div class="site-info container_24">
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'ufclas-stories' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'ufclas-stories' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
 			<?php printf( __( 'Theme: %1$s by %2$s.', 'ufclas-stories' ), 'UF CLAS Stories', '<a href="http://it.clas.ufl.edu/" rel="designer">Priscilla Chapman (CLAS IT)</a>' ); ?>

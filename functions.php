@@ -9,7 +9,7 @@
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
-	$content_width = 640; /* pixels */
+	$content_width = 960; /* pixels */
 }
 
 if ( ! function_exists( 'ufclas_stories_setup' ) ) :
@@ -88,6 +88,9 @@ add_action( 'widgets_init', 'ufclas_stories_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ufclas_stories_scripts() {
+	// Enqueue 960 grid system css
+	wp_enqueue_style( 'grid-960', get_template_directory_uri() . '/css/960_24_col.css' );
+	
 	wp_enqueue_style( 'ufclas-stories-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'ufclas-stories-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
