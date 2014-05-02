@@ -103,6 +103,9 @@ function ufclas_stories_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'ufclas_stories_scripts' );
 
+/**
+ * Site Last Updated, copied from UF Template v1.5
+ */
 function ufclas_stories_google_fonts(){
 	wp_enqueue_style('ufclas-stories-fonts', 'http://fonts.googleapis.com/css?family=Lato:300,400');	
 }
@@ -132,3 +135,17 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Site Last Updated, copied from UF Template v1.5
+ */
+function ufl_site_last_updated($d = '') {
+	$recent = new WP_Query("showposts=1&orderby=modified&post_status=publish&post_type=any");
+	if ( $recent->have_posts() ) {
+		while ( $recent->have_posts() ) {
+			$recent->the_post();
+			$last_update = get_the_modified_date($d);
+		}
+		echo $last_update;
+	}
+}
