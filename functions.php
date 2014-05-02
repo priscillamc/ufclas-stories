@@ -100,6 +100,7 @@ function ufclas_stories_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+		wp_enqueue_script('uf-clas-stories', get_template_directory_uri() . '/js/stories.js', array('jquery'), '0.0.3', false);	
 }
 add_action( 'wp_enqueue_scripts', 'ufclas_stories_scripts' );
 
