@@ -720,6 +720,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
     font-weight: 300;
 	word-spacing: 1.6px;
 }
+.site-title span {
+	position: absolute;
+	text-indent: -9999em;
+}
 .site-description {
 	font-family: Lato, 'Lucida Sans', Arial, sans-serif;
 	font-size: 1.0em;
