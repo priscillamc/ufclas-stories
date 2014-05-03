@@ -23,11 +23,18 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+			<div class="container_24">
+                <div class="grid_16">
+                	<h1 class="site-title"><span><?php echo get_bloginfo('name'); ?></span> <a href="http://oral.history.ufl.edu/"><?php echo get_bloginfo('description'); ?></a></h1>
+                </div>
+                <div class="grid_8">
+                    <h2 class="site-description"><a href="http://clas.ufl.edu/">College of Liberal Arts and Sciences</a>
+                    <br /><a href="http://ufl.edu/">University of Florida</a></h2>
+                </div>
+            </div>
 		</div>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+		<nav id="site-navigation" class="main-navigation container_24" role="navigation">
 			<button class="menu-toggle"><?php _e( 'Primary Menu', 'ufclas-stories' ); ?></button>
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'ufclas-stories' ); ?></a>
 
@@ -35,4 +42,4 @@
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content container_24">
